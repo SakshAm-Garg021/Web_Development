@@ -1,0 +1,48 @@
+<!-- QUESTION 3: Create a webpage using CSS Flexbox (CSS Flexbox Layout ). 
+(CO3 & K3) 
+Instructions: 
+1. . Create a container with three boxes 
+2. 2. Use display: flex 
+3. 3. Center align items horizontally -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Layout</title>
+    <style>
+        .Section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1475px;
+            height: 150px;
+            border: 2px solid black;
+            padding:20px;
+            margin-top: 30px;
+        }
+        .Box{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: cornflowerblue;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            color: red;
+        }
+        h1{
+            text-align: center;
+            color: rgb(142, 24, 47);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Flexbox Layout</h1>
+    <div class="Section">
+        <div class="Box">R1</div>
+        <div class="Box">R2</div>
+        <div class="Box">R3</div>
+    </div>
+</body>
+</html>
