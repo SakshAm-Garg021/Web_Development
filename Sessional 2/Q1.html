@@ -1,0 +1,40 @@
+<!-- QUESTION 1: Design a webpage to demonstrate block-level elements. 
+(CO3 & K3) 
+Instructions: 
+1) Use <div> elements to create two sections 
+2) One section should contain heading, paragraph and image and another is button 
+3) Apply border, margin and padding using CSS 
+4) Show that block elements start on a new line 
+5) Use internal CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design a webpage to demonstrate block-level elements.</title>
+    <style>
+        .div{
+            border: 2px black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .Section1{
+            background-color: darkseagreen;
+        }
+        .Section2{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="Section1">
+        <h1>Block-Level elements</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, aut numquam laborum omnis maiores ad optio quasi odit incidunt, nesciunt est, accusantium recusandae illo officia nobis quidem placeat perspiciatis! Pariatur eius dolorem, maxime soluta dolore est consequatur facilis corporis tenetur rem. Est, quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ullam dolore ipsum. Maiores, officiis repellat nulla illum fugiat nisi mollitia inventore adipisci, quibusdam iusto pariatur veritatis reprehenderit in doloremque tempora?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum officiis a numquam perferendis dolore veritatis doloremque laboriosam quibusdam accusamus quod officia, voluptatibus voluptatum dignissimos exercitationem beatae eligendi! Tempora, laudantium distinctio?</p>
+        <img src="image.jpg" alt="Image" height="365">
+    </div>
+    <div class="Section2">
+        <button type="button">Submit</button>
+    </div>
+</body>
+</html>
