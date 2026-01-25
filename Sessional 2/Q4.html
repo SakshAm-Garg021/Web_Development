@@ -1,0 +1,59 @@
+<!--  
+QUESTION 4: Create a webpage to demonstrate CSS position properties. 
+(CO3 & K3) 
+Instructions: 
+1. Create div using: 
+• position: static 
+• position: relative 
+• position: absolute 
+• position: fixed 
+2. Use top, left, right, bottom properties 
+3. Apply border, width, height and background color 
+4. Display position name inside each div -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 111px;
+            margin: 10px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+        .static{
+            position: static;
+            background-color: aquamarine;
+        }
+        .relative{
+            position: relative;
+            background-color: aqua;
+            top: 20px;
+        }
+        .absolute{
+            position: absolute;
+            background-color: blueviolet;
+            top: 100px;
+            left: 200px;
+        }
+        .fixed{
+            position: fixed;
+            background-color: cadetblue;
+            top: 250px;
+            left: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box fixed">Fixed</div>
+</body>
+</html>
