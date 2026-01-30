@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Verification</title>
+</head>
+<body>
+
+<h2>Certificate Verification</h2>
+<p id="result"></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const certId = params.get("id");
+
+    if (certId) {
+        document.getElementById("result").innerText =
+            "Certificate ID " + certId + " is VALID.";
+    } else {
+        document.getElementById("result").innerText =
+            "Invalid Certificate!";
+    }
+</script>
+
+</body>
+</html>
