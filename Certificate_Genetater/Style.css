@@ -1,0 +1,73 @@
+body {
+    font-family: Arial;
+    background: #ffb6b6;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.form input {
+    display: block;
+    margin: 25px 0;
+    border: 5px solid black;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Certificate container */
+#certificate {
+    position: relative;
+    width: 800px;
+    height: 550px;
+    background-image: url("design.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Student Name */
+#cName {
+    position: absolute;
+    top: 260px;              /* adjust slightly if needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    font-weight: bold;
+    color: #2c2c2c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#cEvent{
+    margin-top: 60px;
+    font-size: 36px;
+}
+
+#cId {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+#certificate h3 {
+    font-size: 22px;
+}
+
+#qrcode {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+
+#logo {
+    position: absolute;
+    
+    left: 86%;
+    bottom: 76%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 52px;
+}
+
+
+
