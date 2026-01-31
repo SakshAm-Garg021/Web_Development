@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- https://www.niet.co.in/assets/frontend/images/logo.svg -->
+<h2>Certificate Generator</h2>
+
+<div class="container">
+    <div class="form">
+        <input type="text" id="name" placeholder="Student Name" oninput="updateCertificate()">
+        <input type="text" id="event" placeholder="Event Name" oninput="updateCertificate()">
+        <input type="text" id="certId" placeholder="Certificate ID" oninput="updateCertificate()">
+        <button onclick="downloadPDF()">Download Certificate</button>
+    </div>
+
+   <div id="certificate">
+    <img src="Logo.png" id="logo">
+
+    <!-- <h1>Certificate of Participation</h1> -->
+
+    <p>This is to certify that</p>
+    <div id="cName">STUDENT NAME</div>
+
+    <p>has successfully participated in</p>
+    <h3 id="cEvent">Event Name</h3>
+
+    <p>Certificate ID: <span id="cId">XXXX</span></p>
+
+    <img src="images/signature.png" id="signature">
+    <p id="signText">Authorized Signature</p>
+
+    <img src="images/seal.png" id="seal">
+
+    <div id="qrcode"></div>
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
