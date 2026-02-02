@@ -3,7 +3,7 @@ name: Scheduled Code Publish
 on:
   schedule:
     - cron: '30 4 * * *'   # 10:00 AM IST
-  workflow_dispatch:      # optional manual run button
+  #workflow_dispatch:      # optional manual run button
 
 jobs:
   publish:
