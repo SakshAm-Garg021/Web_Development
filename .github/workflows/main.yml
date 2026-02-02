@@ -1,13 +1,27 @@
-name: Upode Job
+name: Scheduled Code Publish
 
-on: 
+on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: '30 4 * * *'   # 10:00 AM IST
+  workflow_dispatch:      # optional manual run button
 
 jobs:
-  run-script:
-     runs-on: windows-latest 
+  publish:
+    runs-on: ubuntu-latest
 
-     steps:
-       - name: Print Message
-         run: echo "Schedule Workflow Executed"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make scheduled change
+        run: |
+          echo "Code published at $(date)" >> scheduled.txt
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add .
+          git commit -m "Scheduled publish" || echo "No changes"
+          git push
+
